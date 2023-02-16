@@ -5,7 +5,7 @@ import * as crypto from 'node:crypto';
 import * as util from 'node:util';
 import * as os from 'node:os';
 
-import MemoryAdapter from '../adapters/memory_adapter.js';
+import RedisAdapter from '../adapters/RedisAdapter.js';
 import { DEV_KEYSTORE } from '../consts/index.js';
 
 import * as base64url from './base64url.js';
@@ -556,7 +556,7 @@ function makeDefaults() {
      *
      * @nodefault
      */
-    adapter: MemoryAdapter,
+    adapter: RedisAdapter,
 
     /*
      * claims
